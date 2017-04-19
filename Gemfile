@@ -1,4 +1,8 @@
-source "https://rubygems.org"
+if ENV['development']
+  source 'http://ruby.taobao.org/'
+else
+  source 'https://rubygems.org'
+end
 
 group :development do
   gem 'rake', '~> 10.0'
